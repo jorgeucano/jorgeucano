@@ -9,7 +9,8 @@ import 'hammerjs';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MdButtonModule,
-  MdToolbarModule
+  MdToolbarModule,
+  MdGridListModule
 } from '@angular/material';
 
 
@@ -47,7 +48,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
 
     // material components
-    MdButtonModule, MdToolbarModule
+    MdButtonModule, MdToolbarModule, MdGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
