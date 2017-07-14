@@ -1,8 +1,42 @@
 .presentation {
   background-position: center;
+  background-size: 100% 100%;
   background-image: url(/assets/jorge-img-background.png);
   color: white;
 }
+
+.workhard {
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url(https://pbs.twimg.com/media/C9E7UfqXUAARNlW.jpg:large);
+  width: 100%;
+  height: 700px;
+}
+
 .logo {
-  width: 200px;
+  width: 20%;
+}
+
+
+.example-card {
+  margin: 3%;
+  width: 90%;
+}
+
+.example-header-image {
+  background-image: url(https://pbs.twimg.com/profile_images/855547570323689473/I-fpilWj_400x400.jpg);
+  background-size: cover;
+}
+
+p {
+  font-size: 24px;
+}
+
+md-card {
+  background: white;
+  color: #384C54;
+}
+
+md-chip {
+  max-width: 150px;
 }

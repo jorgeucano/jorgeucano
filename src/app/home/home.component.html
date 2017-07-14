@@ -11,3 +11,27 @@
 
   </md-grid-tile>
 </md-grid-list>
+
+<md-card class="example-card">
+  <md-card-header>
+    <div md-card-avatar class="example-header-image"></div>
+    <md-card-title>Jorge Cano</md-card-title>
+    <md-card-subtitle>Full Stack Developer - ByteDefault</md-card-subtitle>
+    <md-chip-list>
+      <md-chip *ngFor="let technology of technologies"
+          selected="true"
+          [style.background]="technology.color">
+        {{technology.name}}
+      </md-chip>
+    </md-chip-list>
+  </md-card-header>
+  <md-card-content>
+    <p>
+      After more than 9 years developing, Jorge is a full stack developer in javascript technologies. <br />
+      Today Jorge is a fulll stack developer in ByteDefault using Angular / RxJS / Firebase / Nativescript and other technologies ... <br />
+      Professor of several courses related to javascript, international speaker, and writer of technical articles, <br />
+      Google Developer Expert in web technologies & Angular, Nativescript Developer Expert.
+    </p>
+  </md-card-content>
+</md-card>
+<div class ="workhard"></div>

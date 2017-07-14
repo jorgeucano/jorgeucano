@@ -10,7 +10,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MdButtonModule,
   MdToolbarModule,
-  MdGridListModule
+  MdGridListModule,
+  MdCardModule,
+  MdChipsModule
 } from '@angular/material';
 
 
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'speak', component: SpeakComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  {path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
@@ -48,7 +51,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
 
     // material components
-    MdButtonModule, MdToolbarModule, MdGridListModule
+    MdButtonModule, MdToolbarModule, MdGridListModule, MdCardModule, MdChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
