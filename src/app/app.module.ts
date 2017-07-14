@@ -7,7 +7,10 @@ import { RouterModule, Routes } from '@angular/router';
 // material
 import 'hammerjs';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule} from '@angular/material';
+import {
+  MdButtonModule,
+  MdToolbarModule
+} from '@angular/material';
 
 
 // components
@@ -44,7 +47,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
 
     // material components
-    MdButtonModule
+    MdButtonModule, MdToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
