@@ -13,17 +13,28 @@ import {MdButtonModule} from '@angular/material';
 // components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { SpeakComponent } from './speak/speak.component';
+import { MenuComponent } from './menu/menu.component';
 
 //router
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'speak', component: SpeakComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    BlogComponent,
+    ContactComponent,
+    SpeakComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
